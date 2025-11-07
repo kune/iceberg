@@ -15,7 +15,11 @@ variables:
   DISTRIBUTE: "false" # option to disable the creation and publication of a distribution
   COLLECT_REPORTS: "false" # collect test reports in a release build
 
+
+
 build:
+  tags:
+    - size-xl
   script:
     - echo "1.10.0-test" > version.txt
     - gradle build -x test -x integrationTest
