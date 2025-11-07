@@ -1,0 +1,16 @@
+include:
+  - project: 'orrp/common/ci-cd-templates'
+    ref: 'v10.1.0'
+    file: 'gitlab-flow.yml'
+
+variables:
+  BUILD_DOCS: "false" # activates the `documentation` job (asciidoc)
+  HTMLSANITYCHECK: "false" # option to disable the htmlSanityCheck task
+  DEPLOY_DOCS: "false" # activates the `docs deploy` job
+  DEPLOY_FITNESSE: "false" # activates the `fitnesse deploy` job
+  DEPENDENCY_TRACK: "false" # option to disable `dependency track` job
+  SONAR: "false" # option to disable `sonar` job
+  SPOTLESS: "false" # option to disable `spotless check` job
+  REWRITE_DRY_RUN: "false" # option to disable `rewrite dry run` job
+  DISTRIBUTE: "false" # option to disable the creation and publication of a distribution
+  COLLECT_REPORTS: "false" # collect test reports in a release build
