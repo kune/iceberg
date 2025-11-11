@@ -1,3 +1,15 @@
+# MSG-Edition
+
+Dies ist eine Kopie des [Apache Iceberg Projekts](https://github.com/apache/iceberg).
+
+**Achtung**: Dieser Default-Branch `mgi/1.10.0-jdbc-catalog-fix` dient dem Build des Projekts in unserem CI-System und darf nicht in andere Branches gemerged werden.
+
+Der Fork wurde aufgrund eines Problems in der Klasse JdbcCatalog in Version 1.10.0 erstellt, die die Nutzung des Iceberg-Katalogs in bestimmten Datenbanksystemen verhindert.
+
+Der Fix zu dem beschriebenen Problem wurde im Branch `main` sowie im Branch `1.10.0-jdbc-catalog-fix` angewendet, hier sollten - falls erforderlich - Anpassungen vorgenommen und dann in den Default-Branch `mgi/1.10.0-jdbc-catalog-fix` gemerged werden..
+
+Nach Release von neueren Versionen (aktuell 1.10.0) des Iceberg-Projekts muss die Notwendigkeit dieses Forks geprüft werden und dieser entsprechend entfernt oder angepasst werden.  
+
 <!--
   - Licensed to the Apache Software Foundation (ASF) under one
   - or more contributor license agreements.  See the NOTICE file
@@ -17,7 +29,7 @@
   - under the License.
   -->
 
-![Iceberg](https://iceberg.apache.org/assets/images/Iceberg-logo.svg)
+![Iceberg](https://iceberg.apache.org/assets/images/Iceberg-logo.svg) 
 
 [![](https://github.com/apache/iceberg/actions/workflows/java-ci.yml/badge.svg)](https://github.com/apache/iceberg/actions/workflows/java-ci.yml)
 [![Slack](https://img.shields.io/badge/chat-on%20Slack-brightgreen.svg)](https://apache-iceberg.slack.com/)
